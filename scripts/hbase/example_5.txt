@@ -1,0 +1,1 @@
+alter 'user_activity', {NAME => 'profile', COMPRESSION => 'SNAPPY'}

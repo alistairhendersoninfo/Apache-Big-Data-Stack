@@ -1,0 +1,9 @@
+# provisioning/datasources/druid.yml
+apiVersion: 1
+datasources:
+  - name: Druid
+    type: grafana-druid-datasource
+    url: http://druid-broker:8082
+    jsonData:
+      connection:
+        url: http://druid-broker:8082/druid/v2/sql

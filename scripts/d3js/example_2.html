@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real-Time Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>Streaming Analytics Dashboard</h1>
+    <div id="connection-status">Disconnected</div>
+  </header>
+
+  <main class="dashboard-grid">
+    <section class="chart-container" id="timeseries">
+      <h2>Events Over Time</h2>
+      <svg id="line-chart"></svg>
+    </section>
+
+    <section class="chart-container" id="distribution">
+      <h2>Category Distribution</h2>
+      <svg id="bar-chart"></svg>
+    </section>
+
+    <section class="chart-container" id="activity">
+      <h2>Hourly Activity Heatmap</h2>
+      <svg id="heatmap"></svg>
+    </section>
+
+    <section class="chart-container" id="metrics">
+      <h2>Key Metrics</h2>
+      <div class="metrics-grid">
+        <div class="metric" id="events-per-sec">
+          <span class="value">0</span>
+          <span class="label">Events/sec</span>
+        </div>
+        <div class="metric" id="total-events">
+          <span class="value">0</span>
+          <span class="label">Total Events</span>
+        </div>
+        <div class="metric" id="unique-users">
+          <span class="value">0</span>
+          <span class="label">Unique Users</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

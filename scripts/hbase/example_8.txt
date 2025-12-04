@@ -1,0 +1,8 @@
+# Grant permissions at table level
+grant 'alice', 'RW', 'user_activity'
+
+# Grant permissions at column family level
+grant 'bob', 'R', 'user_activity', 'profile'
+
+# Revoke permissions
+revoke 'bob', 'user_activity'

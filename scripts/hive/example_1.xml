@@ -1,0 +1,4 @@
+<property>
+    <name>hive.metastore.use.SSL</name>
+    <value>true</value>
+</property>

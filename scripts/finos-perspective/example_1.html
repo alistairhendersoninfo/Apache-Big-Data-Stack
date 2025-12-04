@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trading Dashboard - FINOS Perspective</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 8px;
+      padding: 8px;
+      height: 100vh;
+    }
+    .panel {
+      background: #16213e;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+    .panel h3 {
+      padding: 8px 12px;
+      background: #0f3460;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    perspective-viewer {
+      --plugin--background-color: transparent;
+      height: calc(100% - 32px);
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="panel">
+      <h3>Live Prices</h3>
+      <perspective-viewer id="prices"></perspective-viewer>
+    </div>
+    <div class="panel">
+      <h3>Order Book</h3>
+      <perspective-viewer id="orderbook"></perspective-viewer>
+    </div>
+    <div class="panel" style="grid-column: span 2;">
+      <h3>Trade History</h3>
+      <perspective-viewer id="trades"></perspective-viewer>
+    </div>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>

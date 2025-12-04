@@ -1,0 +1,10 @@
+{
+  "name": "Production",
+  "description": "Prod environment",
+  "variables": {
+    "DB_HOST": "prod-db.company.com",
+    "DB_PORT": "5432",
+    "DB_NAME": "hopdb_prod",
+    "INPUT_PATH": "/data/prod/input"
+  }
+}

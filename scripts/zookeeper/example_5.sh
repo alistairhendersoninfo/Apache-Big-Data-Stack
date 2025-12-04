@@ -1,0 +1,3 @@
+# In zoo.cfg
+authProvider.1=org.apache.zookeeper.server.auth.SASLAuthenticationProvider
+requireClientAuthScheme=sasl

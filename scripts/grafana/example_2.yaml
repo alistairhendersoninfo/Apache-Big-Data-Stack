@@ -1,0 +1,28 @@
+# provisioning/alerting/rules.yml
+apiVersion: 1
+groups:
+  - name: kafka-alerts
+    folder: Big Data
+    interval: 1m
+    rules:
+      - uid: kafka-lag-high
+        title: High Consumer Lag
+        condition: C
+        data:
+          - refId: A
+            queryType: ''
+            datasourceUid: prometheus
+            model:
+              expr: sum(kafka_consumergroup_lag) by (consumergroup)
+          - refId: C
+            datasourceUid: '-100'
+            model:
+              conditions:
+                - evaluator:
+                    params: [10000]
+                    type: gt
+        for: 5m
+        annotations:
+          summary: Consumer lag is above 10k
+        labels:
+          severity: warning

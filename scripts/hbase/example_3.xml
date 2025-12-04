@@ -1,0 +1,4 @@
+<property>
+    <name>hbase.ssl.enabled</name>
+    <value>true</value>
+</property>

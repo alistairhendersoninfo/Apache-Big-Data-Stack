@@ -1,0 +1,4 @@
+<property>
+    <name>hive.server2.logging.operation.enabled</name>
+    <value>true</value>
+</property>

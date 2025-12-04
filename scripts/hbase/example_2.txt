@@ -1,0 +1,14 @@
+# Insert user profile data
+put 'user_activity', 'user001', 'profile:name', 'Alice Johnson'
+put 'user_activity', 'user001', 'profile:email', 'alice@example.com'
+put 'user_activity', 'user001', 'profile:joined', '2024-01-01'
+
+# Insert event data
+put 'user_activity', 'user001', 'events:login_2024-01-15', '09:30:00'
+put 'user_activity', 'user001', 'events:purchase_2024-01-15', 'product_123'
+put 'user_activity', 'user001', 'events:logout_2024-01-15', '17:45:00'
+
+# Insert data for another user
+put 'user_activity', 'user002', 'profile:name', 'Bob Smith'
+put 'user_activity', 'user002', 'profile:email', 'bob@example.com'
+put 'user_activity', 'user002', 'events:login_2024-01-16', '10:00:00'

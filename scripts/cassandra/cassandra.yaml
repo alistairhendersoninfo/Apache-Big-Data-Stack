@@ -1,0 +1,5 @@
+# Key configurations
+cluster_name: 'ProductionCluster'
+seeds: "127.0.0.1"
+listen_address: localhost
+rpc_address: localhost

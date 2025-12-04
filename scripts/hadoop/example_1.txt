@@ -1,0 +1,7 @@
+Apache    1
+HDFS      1
+Hadoop    4
+MapReduce 1
+across    1
+big       1
+...

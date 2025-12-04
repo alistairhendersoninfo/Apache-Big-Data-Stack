@@ -1,0 +1,20 @@
+# Get specific row
+get 'user_activity', 'user001'
+
+# Get specific column family
+get 'user_activity', 'user001', {COLUMN => 'profile'}
+
+# Get specific column
+get 'user_activity', 'user001', {COLUMN => 'profile:name'}
+
+# Scan entire table
+scan 'user_activity'
+
+# Scan with limits
+scan 'user_activity', {LIMIT => 5}
+
+# Scan specific column family
+scan 'user_activity', {COLUMNS => 'events'}
+
+# Scan with row key prefix
+scan 'user_activity', {STARTROW => 'user001', STOPROW => 'user002'}

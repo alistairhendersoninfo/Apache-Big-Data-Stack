@@ -1,0 +1,11 @@
+# Update (just put with new value)
+put 'user_activity', 'user001', 'profile:email', 'alice.j@example.com'
+
+# Delete specific column
+delete 'user_activity', 'user001', 'events:logout_2024-01-15'
+
+# Delete entire row
+deleteall 'user_activity', 'user002'
+
+# View multiple versions
+get 'user_activity', 'user001', {COLUMN => 'profile:email', VERSIONS => 5}

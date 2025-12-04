@@ -1,0 +1,25 @@
+{
+  "type": "kafka",
+  "spec": {
+    "dataSchema": {
+      "dataSource": "events",
+      "timestampSpec": {"column": "timestamp", "format": "iso"},
+      "dimensionsSpec": {
+        "dimensions": ["user_id", "event_type", "country"]
+      },
+      "metricsSpec": [
+        {"type": "count", "name": "count"},
+        {"type": "longSum", "name": "total_value", "fieldName": "value"}
+      ],
+      "granularitySpec": {
+        "type": "uniform",
+        "segmentGranularity": "HOUR",
+        "queryGranularity": "MINUTE"
+      }
+    },
+    "ioConfig": {
+      "topic": "events",
+      "consumerProperties": {"bootstrap.servers": "localhost:9092"}
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Development",
+  "description": "Dev environment",
+  "variables": {
+    "DB_HOST": "localhost",
+    "DB_PORT": "5432",
+    "DB_NAME": "hopdb_dev",
+    "INPUT_PATH": "/tmp/data"
+  }
+}

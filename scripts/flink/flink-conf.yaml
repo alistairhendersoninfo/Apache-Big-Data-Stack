@@ -1,0 +1,14 @@
+# Increase TaskManager memory
+taskmanager.memory.process.size: 4096m
+
+# Set number of task slots per TaskManager
+taskmanager.numberOfTaskSlots: 4
+
+# Enable checkpointing directory (local filesystem)
+state.checkpoints.dir: file:///tmp/flink-checkpoints
+
+# Enable savepoints directory
+state.savepoints.dir: file:///tmp/flink-savepoints
+
+# Set parallelism default
+parallelism.default: 2

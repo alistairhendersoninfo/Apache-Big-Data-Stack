@@ -1,0 +1,6 @@
+# Set permissions on HDFS directories
+hdfs dfs -chmod 750 /user/data
+hdfs dfs -chown hadoop:hadoop /user/data
+
+# Enable HDFS ACLs for fine-grained access
+hdfs dfs -setfacl -m user:alice:rwx /user/data

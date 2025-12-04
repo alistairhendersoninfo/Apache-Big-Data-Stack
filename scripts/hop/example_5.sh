@@ -1,0 +1,1 @@
+sudo -u postgres psql -d hopdb -c "SELECT * FROM sales_clean;"

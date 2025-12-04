@@ -1,0 +1,8 @@
+<property>
+    <name>hbase.security.authentication</name>
+    <value>kerberos</value>
+</property>
+<property>
+    <name>hbase.security.authorization</name>
+    <value>true</value>
+</property>

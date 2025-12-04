@@ -1,0 +1,4 @@
+<property>
+    <name>hfile.block.cache.size</name>
+    <value>0.4</value> <!-- 40% of heap -->
+</property>

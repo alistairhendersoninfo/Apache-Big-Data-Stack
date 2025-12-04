@@ -1,0 +1,5 @@
+-- Example: Revenue by Category (Bar Chart)
+-- Dataset: sales
+-- Metrics: SUM(amount) as Revenue
+-- Dimensions: category
+-- Filters: sale_date >= '2024-01-01'

@@ -1,0 +1,1 @@
+SELECT * FROM mongo.mydb.users WHERE age > 25;

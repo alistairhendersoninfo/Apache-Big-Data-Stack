@@ -1,0 +1,14 @@
+# Check cluster status
+status
+
+# Check table status
+status 'user_activity'
+
+# Compact table (merge HFiles)
+major_compact 'user_activity'
+
+# Balance regions across servers
+balance_switch true
+
+# Flush memstore to disk
+flush 'user_activity'

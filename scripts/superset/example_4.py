@@ -1,0 +1,2 @@
+RATELIMIT_ENABLED = True
+RATELIMIT_DEFAULT = "100 per minute"

@@ -1,0 +1,9 @@
+# In HBase shell
+# Create table with two column families
+create 'user_activity', 'profile', 'events'
+
+# List tables
+list
+
+# Describe table
+describe 'user_activity'

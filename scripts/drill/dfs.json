@@ -1,0 +1,18 @@
+{
+  "type": "file",
+  "connection": "s3a://my-bucket",
+  "config": {
+    "fs.s3a.access.key": "YOUR_ACCESS_KEY",
+    "fs.s3a.secret.key": "YOUR_SECRET_KEY"
+  },
+  "workspaces": {
+    "data": {
+      "location": "/data",
+      "writable": false
+    }
+  },
+  "formats": {
+    "parquet": {"type": "parquet"},
+    "json": {"type": "json"}
+  }
+}
